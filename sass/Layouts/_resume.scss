@@ -1,0 +1,118 @@
+.Myresume {
+  background-color: $color-green;
+  .resume_contain {
+    padding: 50px 0;
+
+    .experience_content {
+      position: relative;
+      .title_side {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 110%;
+        color: #003134b3;
+        opacity: 0.5;
+        transform: translate(62%, 200%) rotate(-90deg);
+      }
+      .experience_title {
+        position: absolute;
+        top: 0;
+        left: -60%;
+      }
+      .block_content {
+        margin: 0 20px 50px 50px;
+        padding: 20px;
+        border: #04a4a4 2px dashed;
+        border-radius: 5px;
+        h4 {
+          font-size: 17px;
+          line-height: 1.2;
+          font-weight: bold;
+        }
+
+        p {
+          color: #2fa583;
+          margin: 14px 0;
+          font-weight: bold;
+        }
+        .block_text {
+          margin: 12px 0;
+          ul {
+            list-style-type: circle;
+            li {
+              span {
+                color: $color-green-2;
+                font-weight: 700;
+                font-size: 14px;
+              }
+              margin-bottom: 20px;
+              color: gray;
+              font-size: 13px;
+              font-weight: bold;
+            }
+          }
+        }
+        transition: all 0.5s;
+        &:hover {
+          background-color: white;
+          border: #04a4a4 2px solid;
+          box-shadow: 0 0 15px 1px #8888;
+        }
+      }
+    }
+    .education_content {
+      .title_side {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 110%;
+        color: #003134b3;
+        opacity: 0.5;
+        transform: translate(62%, 200%) rotate(-90deg);
+      }
+      position: relative;
+      .education_title {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .block_content {
+        margin: 0 50px 50px 20px;
+        padding: 20px;
+        display: block;
+        border: #04a4a4 2px dashed;
+        border-radius: 5px;
+        h4 {
+          font-size: 17px;
+          line-height: 1.2;
+          font-weight: bold;
+        }
+
+        p {
+          color: #2fa583;
+          margin: 14px 0;
+        }
+        .block_text {
+          margin: 12px 0;
+          ul {
+            list-style-type: circle;
+            li {
+              span {
+                color: black;
+                font-weight: 700;
+                font-size: 14px;
+              }
+              margin-bottom: 20px;
+              color: gray;
+              font-size: 12px;
+            }
+          }
+        }
+        transition: all 0.5s;
+        &:hover {
+          background-color: white;
+          border: #04a4a4 2px solid;
+          box-shadow: 0 0 15px 1px #8888;
+        }
+      }
+    }
+  }
+}

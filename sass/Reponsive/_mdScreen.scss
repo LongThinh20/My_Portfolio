@@ -1,0 +1,93 @@
+@include responsive("medium") {
+  #Myheader {
+    &.headerClass {
+      opacity: 0.5;
+      .navbar {
+        .header_right {
+          background-color: $color-green-1;
+          opacity: 0.9;
+          text-align: center;
+          li {
+            color: $color-green;
+            margin: 10px 0;
+          }
+        }
+      }
+    }
+    button {
+      &:focus {
+        outline: none;
+      }
+      background-color: $color-green;
+    }
+    .navbar {
+      .header_right {
+        margin-top: 20px;
+        border-radius: 5px;
+        background-color: $color-green-1;
+        text-align: center;
+        color: $color-green;
+        li {
+          color: $color-green;
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+
+  #Myhome {
+    .content_left {
+      transform: translateY(20%);
+    }
+    .content_right {
+      height: 110vh;
+      .bg_home {
+        width: 50%;
+      }
+      img {
+        width: 50%;
+        transform: translateY(120%);
+        left: 50%;
+      }
+    }
+  }
+
+  #Myresume {
+    .title_side {
+      transform: translate(0, -120%) rotate(0);
+      font-size: 2rem;
+      padding-left: 20px;
+    }
+    .experience_title {
+      left: 0;
+    }
+    .education_content {
+      margin-top: 55px;
+      .block_content {
+        margin: 0 20px 50px 50px;
+      }
+      .education_title {
+        left: 0;
+      }
+    }
+  }
+
+  #Myportfolio {
+    .detail {
+      width: 60%;
+      right: 5%;
+      bottom: -10%;
+    }
+  }
+
+  #Myabout {
+    .content_right {
+      ul {
+        margin-top: 50px;
+        li {
+          padding-left: 50px;
+        }
+      }
+    }
+  }
+}

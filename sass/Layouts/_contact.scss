@@ -1,0 +1,57 @@
+.Mycontact {
+  background-color: #4c6e71;
+
+  .Mycontact_content {
+    padding: 80px 60px;
+    color: $color-green;
+    h1 {
+      color: white;
+    }
+    p {
+      font-size: 16px;
+      margin: 16px 0 60px 0;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+    .content_left {
+      ul {
+        list-style: none;
+        li {
+          margin-bottom: 10px;
+          font-size: 16px;
+          color: $color-red;
+          p {
+            font-size: 30px;
+            color: $color-red;
+          }
+          span {
+            display: inline-block;
+            width: 125px;
+            color: #e6f4f1;
+            font-weight: 400;
+
+            margin-right: 5px;
+            i {
+              font-size: 20px;
+              color: $color-red;
+              margin-right: 5px;
+              width: 30px;
+            }
+          }
+          a {
+            text-decoration: none;
+            color: $color-red;
+          }
+        }
+      }
+    }
+    .content_right {
+      button {
+        background-color: $color-red;
+        color: white;
+        width: 100px;
+        font-weight: bold;
+      }
+    }
+  }
+}

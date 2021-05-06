@@ -1,0 +1,51 @@
+@include responsive("large") {
+  #Myhome {
+    height: 100%;
+    .content_left {
+      h4 {
+        margin-bottom: 30px;
+      }
+      h1 {
+        a {
+          font-size: 3rem;
+        }
+      }
+      p {
+        padding-right: 20px;
+      }
+    }
+    .content_right {
+      height: 90vh;
+      .bg_home {
+        transform: translateY(90%);
+        left: 40%;
+      }
+      img {
+        position: absolute;
+        width: 50%;
+        transform: translateY(80%);
+        left: 50%;
+      }
+    }
+  }
+
+  #Myresume {
+    .experience_title {
+      left: -62%;
+    }
+    .education_title {
+      right: 12%;
+    }
+  }
+
+  #Myportfolio {
+    .swiper-container {
+      width: 100%;
+      margin: 0;
+    }
+    .detail {
+      width: 50%;
+      right: 5%;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+@include responsive("small") {
+  #Myheader {
+    .navbar {
+      .header_right {
+        height: 400px;
+        li {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  #Myhome {
+    .content_left {
+      height: 370px;
+
+      h1 {
+        height: 150px;
+      }
+      p {
+        font-size: 20px;
+      }
+      .buttonCV {
+        position: absolute;
+        bottom: -133%;
+        left: 0;
+      }
+    }
+    .content_right {
+      img {
+        display: none;
+      }
+      .bg_home {
+        display: none;
+      }
+    }
+  }
+
+  #Myportfolio {
+    height: 800px;
+    .swiper-slide {
+      img {
+        width: 90%;
+      }
+      .detail {
+        width: 80%;
+        right: 10%;
+        bottom: -10%;
+      }
+
+      .swiper-button-next {
+        display: none;
+      }
+      .swiper-button-prev {
+        display: none;
+      }
+    }
+  }
+  #Myskills {
+    li {
+      position: relative;
+      justify-content: center;
+      transition: all 1s;
+      height: 50px;
+      .skill_unit {
+        position: absolute;
+        top: 20%;
+      }
+      .skill_item {
+        display: none;
+        transition-duration: 1.5s;
+        transition-delay: 3s   ;
+      }
+      &:hover {
+        height: 150px;
+        .skill_unit {
+          top: 5%;
+        }
+        .skill_item {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@keyframes typing {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 300px;
+  }
+}
+
+// @keyframes scroll{
+
+// }

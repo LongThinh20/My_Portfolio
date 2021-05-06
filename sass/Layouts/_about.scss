@@ -1,0 +1,56 @@
+.Myabout {
+  padding: 100px 0;
+  .about_content {
+    background-color: $color-green;
+    padding: 50px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 1px #8888;
+
+    .content_left {
+      height: 350px;
+      .img_container {
+        width: 50%;
+        height: 100%;
+        margin: 0 auto;
+        background: url('../../assets/img/avatar1.jpg')
+          no-repeat center center;
+          box-shadow: 0 0 15px 1px #8888;
+
+        border-radius: 5px;
+        background-size: contain;
+      }
+    }
+    .content_right {
+      left: auto;
+      right: auto;
+      margin-left: auto;
+      ul {
+        list-style: none;
+        width: 80%;
+        li {
+          padding-bottom: 30px;
+          .about_item {
+            border-bottom: #66989bb3 2px solid;
+            margin: 10px 0;
+            .about_icon {
+              width: 8rem;
+              background-color: $color-green-1;
+              color: $color-green;
+              display: inline-block;
+              line-height: 2;
+              font-size: 16px;
+              i {
+                padding: 0 10px;
+              }
+            }
+            .about_text {
+              margin-left: 10px;
+              font-size: 17px;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+}

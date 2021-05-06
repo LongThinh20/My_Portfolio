@@ -1,0 +1,29 @@
+@include responsive("extra-large") {
+  #Myresume {
+    .education_title {
+      right: 10%;
+    }
+    .experience_title {
+      left: -52%;
+    }
+  }
+  #Myhome {
+    height: 85vh;
+    .content_left {
+      transform: translateY(20%);
+      h1 {
+        height: 100px;
+      }
+    }
+  }
+  #Myportfolio {
+    .swiper-container {
+      width: 100%;
+      margin: 0;
+    }
+    .detail {
+      width: 50%;
+      bottom: -5%;
+    }
+  }
+}

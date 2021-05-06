@@ -1,0 +1,173 @@
+.buttonContact {
+  position: fixed;
+  display: none;
+  z-index: 10;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  ul {
+    list-style: none;
+    display: inline-block;
+    &:hover {
+      li {
+        transform: scale(0.8);
+      }
+    }
+
+    li {
+      padding: 13px;
+      margin: 5px;
+      border: #003134 2px solid;
+      background-color: $color-green-1;
+      position: 0.8;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transition: all 0.5s;
+      a {
+        i {
+          color: white;
+          font-size: 25px;
+          padding-left: 5px;
+        }
+      }
+    }
+    .facebook {
+      &::before {
+        content: "Facebook";
+        padding-left: 15px;
+        width: 110px;
+        line-height: 40px;
+        height: 40px;
+        position: absolute;
+        transform: translateX(-120%);
+        top: 8px;
+        opacity: 0;
+        background: linear-gradient(
+          90deg,
+          rgba(0, 49, 52, 1) 0%,
+          rgba(21, 66, 69, 1) 40%,
+          rgba(230, 244, 241, 1) 100%
+        );
+        color: white;
+      }
+      &:hover {
+        background-color: #1093f4;
+        border-color: transparent;
+        i {
+          color: white;
+        }
+        &::before {
+          animation: move 0.5s alternate;
+          opacity: 1;
+        }
+      }
+    }
+    .instagram {
+      &::before {
+        content: "Instagram";
+        padding-left: 15px;
+        width: 110px;
+        line-height: 40px;
+        height: 40px;
+        position: absolute;
+        transform: translateX(-120%);
+        top: 8px;
+        opacity: 0;
+        background: linear-gradient(
+          90deg,
+          rgba(0, 49, 52, 1) 0%,
+          rgba(21, 66, 69, 1) 40%,
+          rgba(230, 244, 241, 1) 100%
+        );
+        color: white;
+      }
+      &:hover {
+        background-color: #db2c79;
+        border-color: transparent;
+        i {
+          color: white;
+        }
+        &::before {
+          animation: move 0.5s alternate;
+          opacity: 1;
+        }
+      }
+    }
+    .git {
+      &::before {
+        content: "Githubb";
+        padding-left: 15px;
+        width: 110px;
+        line-height: 40px;
+        height: 40px;
+        position: absolute;
+        transform: translateX(-120%);
+        top: 8px;
+        opacity: 0;
+        background: linear-gradient(
+          90deg,
+          rgba(0, 49, 52, 1) 0%,
+          rgba(21, 66, 69, 1) 40%,
+          rgba(230, 244, 241, 1) 100%
+        );
+        color: white;
+      }
+      &:hover {
+        background-color: black;
+        border-color: transparent;
+        i {
+          color: white;
+        }
+        &::before {
+          animation: move 0.5s alternate;
+          opacity: 1;
+        }
+      }
+    }
+    .email {
+      &::before {
+        content: "Email";
+        padding-left: 15px;
+        width: 110px;
+        line-height: 40px;
+        height: 40px;
+        position: absolute;
+        transform: translateX(-120%);
+        top: 8px;
+        opacity: 0;
+        background: linear-gradient(
+          90deg,
+          rgba(0, 49, 52, 1) 0%,
+          rgba(21, 66, 69, 1) 40%,
+          rgba(230, 244, 241, 1) 100%
+        );
+        color: white;
+      }
+      &:hover {
+        background-color: #f9be03;
+        border-color: transparent;
+        i {
+          color: white;
+        }
+        &::before {
+          animation: move 0.5s alternate;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+@keyframes move {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 110px;
+    height: 40px;
+    opacity: 1;
+  }
+}

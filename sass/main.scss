@@ -1,0 +1,24 @@
+@import "./Helpers/variables";
+@import "./Helpers/mixin";
+@import "./Base/reset";
+
+@import "./Components/header";
+@import "./Components/buttonCV";
+@import "./Components/buttonContact";
+@import "./Components/titleText";
+@import "./Components/footer";
+@import "./Components//backToTop";
+@import "./Components/block_content";
+@import "./Components/portfolio_modal_edit";
+
+@import "./Layouts/home";
+@import "./Layouts/about";
+@import "./Layouts/resume";
+@import "./Layouts/skills";
+@import "./Layouts/contact";
+@import "./Layouts/portfolio";
+
+@import "./Reponsive/_xlScreen";
+@import "./Reponsive/lgScreen";
+@import "./Reponsive/mdScreen";
+@import "./Reponsive//smScreen";

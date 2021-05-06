@@ -1,0 +1,35 @@
+@mixin styleText($color, $fs, $fw) {
+  color: $color;
+  font-size: $fs;
+  font-weight: $fw;
+}
+
+@mixin responsive($screen) {
+  @if map-has-key($map: $breakpoints, $key: $screen) {
+    $value: map-get(
+      $map: $breakpoints,
+      $key: $screen,
+    );
+    @media screen and (max-width: $value) {
+      @content;
+    }
+  } @else {
+    @warn "Mời bạn nhập lại !!!";
+  }
+}
+@mixin reponsive_993_1199() {
+  @media screen and (min-width: 993px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin reponsive_769_991() {
+  @media screen and (min-width: 769px) and (max-width: 991px) {
+    @content;
+  }
+}
+@mixin reponsive_575_767() {
+  @media screen and (min-width: 575px) and (max-width: 767px) {
+    @content;
+  }
+}

@@ -8,22 +8,43 @@
     }
   }
   #Myhome {
-    height: 85vh;
+    overflow: hidden;
+    height: 100vh;
     .content_left {
       transform: translateY(20%);
       h1 {
         height: 100px;
       }
     }
+    .content_right {
+      height: 120vh;
+      .bg_home {
+        left: 20%;
+      }
+      img {
+        position: absolute;
+        width: 150%;
+        transform: translateY(15%);
+        left: -15%;
+      }
+    }
   }
-  #Myportfolio {
+  #Myportfolios {
+    .swiper-slide img {
+      width: 60%;
+    }
     .swiper-container {
       width: 100%;
-      margin: 0;
     }
-    .detail {
-      width: 50%;
-      bottom: -5%;
+    .swiper-slide {
+      .detail {
+        .block_content {
+          padding: 10px 10px 0 10px;
+          .block_text {
+            padding: 0 20px;
+          }
+        }
+      }
     }
   }
 }

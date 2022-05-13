@@ -67,14 +67,14 @@ body {
   text-transform: uppercase;
   letter-spacing: 1.3px;
   font-weight: 700;
-  color: #313133;
+  color: white;
   background: #4fd1c5;
-  background: -webkit-gradient(linear, left top, right top, from(#81e6d9), to(#4fd1c5));
-  background: linear-gradient(90deg, #81e6d9 0%, #4fd1c5 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#ff8f8f), to(#ee5253));
+  background: linear-gradient(90deg, #ff8f8f 0%, #ee5253 100%);
   border: none;
-  border-radius: 1000px;
-  -webkit-box-shadow: 12px 12px 24px rgba(79, 209, 197, 0.64);
-          box-shadow: 12px 12px 24px rgba(79, 209, 197, 0.64);
+  border-radius: 5px;
+  -webkit-box-shadow: 12px 12px 24px #ff8f8f;
+          box-shadow: 12px 12px 24px #ff8f8f;
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
   cursor: pointer;
@@ -83,27 +83,16 @@ body {
   padding: 10px;
 }
 
-.buttonCV button::before {
-  content: "";
-  border-radius: 1000px;
-  min-width: calc(300px + 12px);
-  min-height: calc(60px + 12px);
-  border: 6px solid #00ffcb;
-  -webkit-box-shadow: 0 0 60px rgba(0, 255, 203, 0.64);
-          box-shadow: 0 0 60px rgba(0, 255, 203, 0.64);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  opacity: 0;
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
+.buttonCV .button a {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  height: 100%;
 }
 
 .buttonCV .button:hover,
 .buttonCV .button:focus {
-  color: #313133;
+  color: white;
   -webkit-transform: translateY(-6px);
           transform: translateY(-6px);
 }
@@ -118,7 +107,7 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 100%;
-  border: 6px solid #00ffcb;
+  border: 6px solid #ff6b6b;
   position: absolute;
   z-index: -1;
   top: 50%;
@@ -637,7 +626,7 @@ body {
 }
 
 .Myresume .resume_contain .experience_content .block_content .block_text {
-  margin: 12px 0;
+  margin: 12px 0 12px 10px;
 }
 
 .Myresume .resume_contain .experience_content .block_content .block_text ul {
@@ -706,7 +695,7 @@ body {
 }
 
 .Myresume .resume_contain .education_content .block_content .block_text {
-  margin: 12px 0;
+  margin: 12px 0 12px 10px;
 }
 
 .Myresume .resume_contain .education_content .block_content .block_text ul {
@@ -796,6 +785,7 @@ body {
 .Myskills .Myskills_content ul li .skill_unit {
   margin-right: 30px;
   font-size: 20px;
+  width: 100px;
 }
 
 .Mycontact {
@@ -864,17 +854,20 @@ body {
   height: 100%;
   background-color: #e6f4f1;
   position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 .Myportfolio .swiper-container {
-  width: 70%;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
   padding: 50px 0;
 }
 
 .Myportfolio .swiper-slide {
   background: #e6f4f1;
-  width: 100%;
+  width: 80%;
   height: 100%;
   padding: 100px 0;
   /* Center slide text vertically */
@@ -929,6 +922,7 @@ body {
 .Myportfolio .swiper-slide .detail .link_btn button a {
   text-decoration: none;
   color: white;
+  cursor: pointer;
 }
 
 .Myportfolio .swiper-slide .detail .link_btn .btn_demo {
@@ -948,6 +942,7 @@ body {
   border-radius: 60px;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
+  cursor: pointer;
 }
 
 .Myportfolio .swiper-slide .link a i {
@@ -964,10 +959,10 @@ body {
 
 .Myportfolio .swiper-slide img {
   display: block;
-  width: 60%;
+  width: 38%;
   height: 320px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
   border: #154245 2px solid;
   border-radius: 20px;
 }
@@ -980,7 +975,8 @@ body {
     left: -52%;
   }
   #Myhome {
-    height: 85vh;
+    overflow: hidden;
+    height: 100vh;
   }
   #Myhome .content_left {
     -webkit-transform: translateY(20%);
@@ -989,13 +985,30 @@ body {
   #Myhome .content_left h1 {
     height: 100px;
   }
-  #Myportfolio .swiper-container {
-    width: 100%;
-    margin: 0;
+  #Myhome .content_right {
+    height: 120vh;
   }
-  #Myportfolio .detail {
-    width: 50%;
-    bottom: -5%;
+  #Myhome .content_right .bg_home {
+    left: 20%;
+  }
+  #Myhome .content_right img {
+    position: absolute;
+    width: 150%;
+    -webkit-transform: translateY(15%);
+            transform: translateY(15%);
+    left: -15%;
+  }
+  #Myportfolios .swiper-slide img {
+    width: 60%;
+  }
+  #Myportfolios .swiper-container {
+    width: 100%;
+  }
+  #Myportfolios .swiper-slide .detail .block_content {
+    padding: 10px 10px 0 10px;
+  }
+  #Myportfolios .swiper-slide .detail .block_content .block_text {
+    padding: 0 20px;
   }
 }
 
@@ -1023,8 +1036,8 @@ body {
   #Myhome .content_right img {
     position: absolute;
     width: 50%;
-    -webkit-transform: translateY(80%);
-            transform: translateY(80%);
+    -webkit-transform: translateY(85%);
+            transform: translateY(85%);
     left: 50%;
   }
   #Myresume .experience_title {
@@ -1033,13 +1046,16 @@ body {
   #Myresume .education_title {
     right: 12%;
   }
-  #Myportfolio .swiper-container {
-    width: 100%;
+  #Myportfolios .swiper-slide img {
+    width: 50%;
+  }
+  #Myportfolios .swiper-container {
     margin: 0;
   }
-  #Myportfolio .detail {
+  #Myportfolios .detail {
     width: 50%;
     right: 5%;
+    bottom: -5%;
   }
 }
 
@@ -1107,10 +1123,11 @@ body {
   #Myresume .education_content .education_title {
     left: 0;
   }
-  #Myportfolio .detail {
-    width: 60%;
+  #Myportfolios .swiper-slide img {
+    width: 80%;
+  }
+  #Myportfolios .swiper-slide .detail {
     right: 5%;
-    bottom: -10%;
   }
   #Myabout .content_right ul {
     margin-top: 50px;
@@ -1147,21 +1164,27 @@ body {
   #Myhome .content_right .bg_home {
     display: none;
   }
-  #Myportfolio {
+  #Myportfolios {
     height: 800px;
   }
-  #Myportfolio .swiper-slide img {
+  #Myportfolios .title_text {
+    margin-bottom: 0;
+  }
+  #Myportfolios .swiper-slide img {
     width: 90%;
   }
-  #Myportfolio .swiper-slide .detail {
+  #Myportfolios .swiper-slide .detail {
     width: 80%;
     right: 10%;
     bottom: -10%;
   }
-  #Myportfolio .swiper-slide .swiper-button-next {
+  #Myportfolios .swiper-slide .swiper-button-next {
     display: none;
   }
-  #Myportfolio .swiper-slide .swiper-button-prev {
+  #Myportfolios .swiper-slide .swiper-button-prev {
+    display: none;
+  }
+  #Myskills i {
     display: none;
   }
   #Myskills li {
@@ -1183,6 +1206,7 @@ body {
             transition-duration: 1.5s;
     -webkit-transition-delay: 3s;
             transition-delay: 3s;
+    font-size: 12px;
   }
   #Myskills li:hover {
     height: 150px;

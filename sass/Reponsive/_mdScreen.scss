@@ -72,11 +72,14 @@
     }
   }
 
-  #Myportfolio {
-    .detail {
-      width: 60%;
-      right: 5%;
-      bottom: -10%;
+  #Myportfolios {
+    .swiper-slide img {
+      width: 80%;
+    }
+    .swiper-slide {
+      .detail {
+        right: 5%;
+      }
     }
   }
 

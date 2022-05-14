@@ -73,12 +73,48 @@
   }
 
   #Myportfolios {
-    .swiper-slide img {
-      width: 80%;
-    }
     .swiper-slide {
+      .bg {
+        width: 70%;
+      }
       .detail {
         right: 5%;
+      }
+    }
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      display: none !important;
+    }
+  }
+  #Myskills {
+    i {
+      display: none;
+    }
+    li {
+      position: relative;
+      justify-content: center;
+      transition: all 1s;
+      height: 50px;
+      .skill_unit {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .skill_item {
+        display: none;
+        transition-duration: 1.5s;
+        transition-delay: 3s;
+        font-size: 12px;
+      }
+      &:hover {
+        height: 150px;
+        .skill_unit {
+          top: 5%;
+        }
+        .skill_item {
+          display: block;
+        }
       }
     }
   }

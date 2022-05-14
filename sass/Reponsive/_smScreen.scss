@@ -37,55 +37,21 @@
   }
 
   #Myportfolios {
+    padding-bottom: 60px;
+    height: 800px;
     .title_text {
       margin-bottom: 0;
     }
-    height: 800px;
     .swiper-slide {
-      img {
-        width: 90%;
+      padding-top: 0px;
+      .bg {
+        width: 100%;
+        margin: 0 5px;
       }
       .detail {
         width: 80%;
         right: 10%;
         bottom: -10%;
-      }
-
-      .swiper-button-next {
-        display: none;
-      }
-      .swiper-button-prev {
-        display: none;
-      }
-    }
-  }
-  #Myskills {
-    i {
-      display: none;
-    }
-    li {
-      position: relative;
-      justify-content: center;
-      transition: all 1s;
-      height: 50px;
-      .skill_unit {
-        position: absolute;
-        top: 20%;
-      }
-      .skill_item {
-        display: none;
-        transition-duration: 1.5s;
-        transition-delay: 3s;
-        font-size: 12px;
-      }
-      &:hover {
-        height: 150px;
-        .skill_unit {
-          top: 5%;
-        }
-        .skill_item {
-          display: block;
-        }
       }
     }
   }
@@ -99,7 +65,3 @@
     height: 300px;
   }
 }
-
-// @keyframes scroll{
-
-// }

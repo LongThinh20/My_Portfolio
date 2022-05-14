@@ -39,10 +39,10 @@
   }
 
   #Myportfolios {
-    .swiper-slide img {
-      width: 50%;
-    }
     .swiper-container {
+      .bg {
+        width: 80%;
+      }
       margin: 0;
     }
     .detail {

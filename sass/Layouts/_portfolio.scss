@@ -129,4 +129,15 @@
       transform: scale(1.2);
     }
   }
+
+  .swiper-button-next {
+    right: 20%;
+    left: auto;
+    color: $color-green-1;
+  }
+  .swiper-button-prev {
+    left: 20%;
+    right: auto;
+    color: $color-green-1;
+  }
 }

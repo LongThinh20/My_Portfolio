@@ -993,6 +993,18 @@ body {
           transform: scale(1.2);
 }
 
+.Myportfolio .swiper-button-next {
+  right: 20%;
+  left: auto;
+  color: #154245;
+}
+
+.Myportfolio .swiper-button-prev {
+  left: 20%;
+  right: auto;
+  color: #154245;
+}
+
 @media screen and (max-width: 1200px) {
   #Myresume .education_title {
     right: 10%;
@@ -1083,6 +1095,10 @@ body {
     right: 5%;
     bottom: -5%;
   }
+  #Myportfolios .swiper-button-next:after,
+  #Myportfolios .swiper-button-prev:after {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1154,10 +1170,6 @@ body {
   }
   #Myportfolios .swiper-slide .detail {
     right: 5%;
-  }
-  #Myportfolios .swiper-button-next:after,
-  #Myportfolios .swiper-button-prev:after {
-    display: none !important;
   }
   #Myskills i {
     display: none;
